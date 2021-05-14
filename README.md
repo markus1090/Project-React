@@ -20,7 +20,8 @@ You can search your favorite book by:
 * Authors,
 * Publisher.
 
-Then you can get more details click on link details.
+Then you can get more details clicked on link details on the bottom of the single book.
+
 Results will appear below the form:
 
 <img src="https://media.giphy.com/media/XWcCrb3HSbamcTy7Ft/giphy.gif">
