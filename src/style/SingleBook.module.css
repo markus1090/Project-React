@@ -1,0 +1,74 @@
+.singleBook {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid whitesmoke;
+    border-radius: 15px 50px;
+    background-color: whitesmoke;
+    margin: 20px;
+    width: 320px;
+    font-size: 20px;
+    padding: 3px;
+    height: 100%;
+}
+
+.singleBook h2, h3, p {
+    text-align: center;
+}
+
+.title, .authors {
+    height: max-content;
+}
+
+.imageBook {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    height: 300px;
+}
+
+.imageBook img {
+    width:max-content;
+    height: max-content;
+    margin-bottom: 20px;
+}
+
+.singleBook div {
+    width: 80%;
+    border-bottom:1px solid silver;
+}
+
+.link {
+    text-decoration: none;
+    margin: 15px 0px 15px 0px;
+    color: orangered;
+    font-size: 25px;
+}
+
+/* Tablet Styles */ 
+@media only screen and (min-width: 600px) and (max-width: 960px) {
+    .singleBook {
+        width: 400px;
+        font-size: 22px;
+    }
+
+    .link {
+        font-size: 28px;
+    }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+    .singleBook {
+        width: 500px;
+        font-size: 25px;
+        padding: 5px;
+    }
+
+    .link {
+        font-size: 32px;
+    }
+}
