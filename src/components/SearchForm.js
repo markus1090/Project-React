@@ -47,7 +47,7 @@ const SearchForm = () => {
                         onChange={searchBook} />
                 </div>
                 <div className={styles["criteria"]}>
-                    <label>Witch criteria would you like to use?</label>
+                    <label>Which criteria would you like to use?</label>
                     <select 
                         value={choose} 
                         onChange={handleChange}
