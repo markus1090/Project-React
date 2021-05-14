@@ -97,4 +97,5 @@ try {
 ## Contacts
 Marco Borea - [Linkedin](https://www.linkedin.com/in/marco-borea-431927206/)
 
-Link Project:
+Link Project GitHub: https://github.com/markus1090/Project-React 
+Link Project Netlify: https://affectionate-lovelace-ffc4d9.netlify.app
