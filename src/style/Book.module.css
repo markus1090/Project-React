@@ -94,7 +94,8 @@
     }
 
     .mainDetails img {
-        width: auto;
+        width: 210px;
+        height: 300px;
     }
 
     .mainDetails2 {

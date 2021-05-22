@@ -6,7 +6,7 @@ import Loading from "../components/Loading"
 import Error from "./Error"
 import styles from "../style/Book.module.css"
 
-const url = "https://www.googleapis.com/books/v1/volumes?q=id:";
+const url = "https://www.googleapis.com/books/v1/volumes/";
 
 const Book = () => {
     const { id } = useParams();
@@ -14,27 +14,26 @@ const Book = () => {
     const [ singleBook, setSingleBook ] = useState([]);
     
     useEffect(() => {
-        setLoading(true);
         const searchById = () => {
+            setLoading(true);
             try {
                 axios.get(`${url}${id}`).then(res => {
-                    const {items} = res.data;
+                    let items = {};
+                    items = res.data.volumeInfo;
                     if (items) {
                         const { 
-                            volumeInfo: {
-                                imageLinks,
-                                title,
-                                subtitle,
-                                authors,
-                                description,
-                                categories,
-                                pageCount,
-                                language,
-                                publisher,
-                                publishedDate, 
-                            }
-                        } = items[0];
-                        const singleBook = {
+                            imageLinks,
+                            title,
+                            subtitle,
+                            authors,
+                            description,
+                            categories,
+                            pageCount,
+                            language,
+                            publisher,
+                            publishedDate,    
+                        } = items;
+                        const single = {
                             imageLinks,
                             title,
                             subtitle,
@@ -46,8 +45,9 @@ const Book = () => {
                             publisher,
                             publishedDate, 
                         }
-                        setSingleBook(singleBook);
+                        setSingleBook(single);
                     } else {
+                        console.log(items);
                         setSingleBook(null);
                     }  
                     setLoading(false);
@@ -57,7 +57,7 @@ const Book = () => {
                 console.log(error);
                 return <Error value={error.status}/>
             }
-        } 
+        }
         searchById()
     }, [id, setLoading])
 
