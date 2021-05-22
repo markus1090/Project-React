@@ -19,6 +19,9 @@ You can search your favorite book by:
 * Title,
 * Authors,
 * Publisher.
+
+Then you can get more details clicked on link details on the bottom of the single book.
+
 Results will appear below the form:
 
 <img src="https://media.giphy.com/media/XWcCrb3HSbamcTy7Ft/giphy.gif">
@@ -97,4 +100,6 @@ try {
 ## Contacts
 Marco Borea - [Linkedin](https://www.linkedin.com/in/marco-borea-431927206/)
 
-Link Project:
+Link Project GitHub: https://github.com/markus1090/Project-React 
+
+Link Project Netlify: https://affectionate-lovelace-ffc4d9.netlify.app
